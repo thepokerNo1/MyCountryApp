@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">My Country App</string>
+    <string name="perfilTvNCDev">L20290968</string>
+    <string name="perfilTvNCLabel">Número de control:</string>
+    <string name="perfilTvNombreDev">Jesus Alexandro Cordova Morfin</string>
+    <string name="perfilTvNombreLabel">Nombre:</string>
+    <string name="buscarPaisTilBuscar">Nombre de país</string>
+    <string name="contryItemTvContryName">México</string>
+    <string name="contryItemConstryCapitalLavel">Capital:</string>
+    <string name="contryItemConstryCapitalExample">Ciudad de México</string>
+    <string name="contryItemConstryPopulationlabel" />
+    <string name="contryItemConstryPopulationLabel">Población:</string>
+    <string name="contryItemConstryPopulation">120,000,000</string>
+    <string name="mainNavMiContinente">Continente</string>
+    <string name="mainNavMiBuscar">Buscar País</string>
+    <string name="mainNavMiPerfil">Dev Info</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="continentes">
+        <item>Continente</item>
+        <item>Africa</item>
+        <item>Americas</item>
+        <item>Asia</item>
+        <item>Europe</item>
+        <item>Osean</item>
+    </string-array>
+</resources>

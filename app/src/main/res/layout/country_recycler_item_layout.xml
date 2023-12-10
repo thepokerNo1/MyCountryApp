@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rectangle_shape"
+    android:layout_margin="8sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/contryItemTvContryName"
+        style="@style/textTitle.bold.center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16sp"
+        android:layout_marginTop="8sp"
+        android:text="@string/contryItemTvContryName"
+
+        app:layout_constraintBottom_toTopOf="@id/contryItemTvContryDataBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contryItemTvContryDataBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contryItemTvContryName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/contryItemSivContryimg"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/ic_world_25"
+            android:scaleType="centerCrop"
+            app:strokeWidth="5sp"
+            app:strokeColor="?attr/colorPrimary"
+            app:shapeAppearanceOverlay="@style/roundedShapeImage"
+            android:layout_margin="14sp"
+
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/contryItemContryInfoBox"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contryItemContryInfoBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="14sp"
+            app:layout_constraintStart_toEndOf="@id/contryItemSivContryimg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+            <TextView
+                android:id="@+id/contryItemConstryCapitalLavel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textSubtitle.center"
+                android:text="@string/contryItemConstryCapitalLavel"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/contryItemConstryCapital"
+                />
+
+            <TextView
+                android:id="@+id/contryItemConstryCapital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textSubSubtitle.center"
+                android:text="@string/contryItemConstryCapitalExample"
+                android:layout_marginBottom="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contryItemConstryCapitalLavel"
+                app:layout_constraintBottom_toTopOf="@id/contryItemConstryPopulationLabel"
+                />
+
+            <TextView
+                android:id="@+id/contryItemConstryPopulationLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textSubtitle.center"
+                android:text="@string/contryItemConstryPopulationLabel"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/contryItemConstryCapital"
+                app:layout_constraintBottom_toTopOf="@id/contryItemConstryPopulation"
+                />
+
+            <TextView
+                android:id="@+id/contryItemConstryPopulation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textSubSubtitle.center"
+                android:text="@string/contryItemConstryPopulation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contryItemConstryPopulationLabel"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+            
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
