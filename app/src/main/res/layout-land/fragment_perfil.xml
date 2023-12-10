@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".perfil.fragments.perfilFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/perfilSivDeveloper"
+            android:layout_width="250sp"
+            android:layout_height="250sp"
+            android:layout_margin="26dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/perfilTvNombreDev"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:shapeAppearanceOverlay="@style/leafShapeImage"
+            app:srcCompat="@drawable/dev"
+            app:strokeColor="?attr/colorPrimary" />
+
+        <TextView
+            android:id="@+id/perfilTvNombreLabel"
+            style="@style/textSubtitle.center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/perfilTvNombreLabel"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/perfilTvNombreDev"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/perfilTvNombreDev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textSubSubtitle.center"
+            android:text="@string/perfilTvNombreDev"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/perfilTvNombreLabel"
+            app:layout_constraintBottom_toTopOf="@id/perfilTvNCLabel"
+
+            />
+
+        <TextView
+            android:id="@+id/perfilTvNCLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/perfilTvNCLabel"
+            style="@style/textSubtitle.center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/perfilTvNombreDev"
+            app:layout_constraintBottom_toTopOf="@+id/perfilTvNCDev"
+            />
+
+        <TextView
+            android:id="@+id/perfilTvNCDev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/perfilTvNCDev"
+            style="@style/textSubSubtitle.center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/perfilTvNCLabel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
